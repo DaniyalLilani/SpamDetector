@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google's Icon API-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="header">
+    <a href="index.html" class="home-icon"><img src="star.png" alt="Home" /></a>
+    <a href="index.html" class="home-icon"><h1>Spam Detector Dashboard</h1></a>
+    <button id="theme-toggle" class="light-mode-button"><span class="material-symbols-outlined">light_mode</span></button>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <a href="index.html"><span class="material-symbols-outlined">dashboard</span>Dashboard</a>
+      <a href="about.html"><span class="material-symbols-outlined">person</span>About</a>
+
+    </div>
+
+    <div class="main-content">
+
+      <div class="content-section">
+        <h2>Spam Analysis Dashboard</h2>
+        <p>The table below displays the results of our spam detection algorithm:</p>
+      </div>
+
+      <div class="dashboard-container">
+
+        <div class="table-container">
+          <table id="chart">
+            <!-- Table Content -->
+            <thead>
+            <tr>
+              <th>File</th>
+              <th>Spam Probability (%)</th>
+              <th>Class</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="performance-metrics">
+          <h2>Performance of the model</h2>
+          <div class="metric">
+            <label>Accuracy:</label>
+            <span id="accuracy-value">Loading...</span>
+          </div>
+          <div class="metric">
+            <label>Precision:</label>
+            <span id="precision-value">Loading...</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Lilani - Kashefi-Azam - Liang - Pianezza</p>
+  </div>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+</body>
+
+</html>
